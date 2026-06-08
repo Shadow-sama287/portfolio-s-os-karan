@@ -176,7 +176,7 @@ function ProjectCard({ project }: { project: Project }) {
         {project.title}
       </h3>
       <p className="font-mono text-xs mb-3" style={{ color: "var(--text-muted)" }}>
-        // {project.tagline}
+        {"// "}{project.tagline}
       </p>
 
       {/* Description */}

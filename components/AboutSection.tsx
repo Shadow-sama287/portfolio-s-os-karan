@@ -195,7 +195,7 @@ export default function AboutSection() {
               className="font-mono text-sm mb-5 text-center lg:text-left"
               style={{ color: "var(--text-muted)" }}
             >
-              // Full-Stack Dev · AI Explorer
+              {"// Full-Stack Dev · AI Explorer"}
             </p>
 
             {/* Social icons */}
@@ -246,7 +246,7 @@ export default function AboutSection() {
             </p>
 
             {/* Skill tree */}
-            <p className="section-label mb-3">// SKILL STACK</p>
+            <p className="section-label mb-3">{"// SKILL STACK"}</p>
             <SkillTree />
           </div>
 

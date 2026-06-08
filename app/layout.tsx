@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Karan | Full-Stack Developer & 3D Graphics Engineer",
+  title: "Karan | Full-Stack Developer",
   description:
     "Portfolio of Karan — Full-Stack Developer specializing in real-time systems, interactive 3D graphics, and WebSocket-driven applications.",
   keywords: [
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Karan" }],
   openGraph: {
-    title: "Karan | Full-Stack Developer & 3D Graphics Engineer",
+    title: "Karan | Full-Stack Developer",
     description:
       "Portfolio showcasing real-time systems, interactive 3D graphics, and full-stack engineering by Karan.",
     type: "website",
@@ -38,7 +39,10 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className="scanlines">{children}</body>
+      <body className="scanlines">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
